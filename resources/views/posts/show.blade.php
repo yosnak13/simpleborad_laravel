@@ -1,6 +1,8 @@
 @if (session('message'))
-    {{ session('message') }}
-@endif
+        {{ session('message') }}
+    @endif
 
-{{ $post->title }}
-{{ $post->content }}
+    {{ $post->title }}
+    {{ $post->content }}
+
+    <a href="/posts/{{ $post->id }}/edit">Edit</a>
